@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ExampleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("ContentView.WelcomeMessage".localized(arguments: "Peter"))
+        }
+        .padding()
     }
 }
 

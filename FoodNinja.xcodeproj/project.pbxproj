@@ -18,8 +18,8 @@
 		84227C372C42FCB5009E0BED /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C362C42FCB5009E0BED /* ExampleModel.swift */; };
 		84227C3C2C42FDD7009E0BED /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */; };
 		84227C3E2C42FFEA009E0BED /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C3D2C42FFEA009E0BED /* Color.swift */; };
+		84227C412C43049F009E0BED /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C402C43049F009E0BED /* SplashView.swift */; };
 		84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */; };
-		84EB74AA2C42F38600A11F1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB74A92C42F38600A11F1A /* ContentView.swift */; };
 		84EB74AC2C42F38800A11F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AB2C42F38800A11F1A /* Assets.xcassets */; };
 		84EB74AF2C42F38800A11F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AE2C42F38800A11F1A /* Preview Assets.xcassets */; };
 		84EB74B92C42F38800A11F1A /* FoodNinjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB74B82C42F38800A11F1A /* FoodNinjaTests.swift */; };
@@ -63,9 +63,9 @@
 		84227C362C42FCB5009E0BED /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		84227C3D2C42FFEA009E0BED /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		84227C402C43049F009E0BED /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		84EB74A42C42F38600A11F1A /* FoodNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNinjaApp.swift; sourceTree = "<group>"; };
-		84EB74A92C42F38600A11F1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84EB74AB2C42F38800A11F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EB74AE2C42F38800A11F1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84EB74B42C42F38800A11F1A /* FoodNinjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodNinjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +148,7 @@
 		84227C2C2C42FBE6009E0BED /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				84227C3F2C43048A009E0BED /* Splash */,
 				84227C2E2C42FC2C009E0BED /* Example */,
 			);
 			path = Core;
@@ -220,6 +221,14 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		84227C3F2C43048A009E0BED /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				84227C402C43049F009E0BED /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		84EB749B2C42F38600A11F1A = {
 			isa = PBXGroup;
 			children = (
@@ -251,7 +260,6 @@
 				84227C2B2C42FBD4009E0BED /* Managers */,
 				84227C272C42F9E7009E0BED /* Utilities */,
 				84227C1B2C42F897009E0BED /* SupportingFiles */,
-				84EB74A92C42F38600A11F1A /* ContentView.swift */,
 				84227C392C42FDA5009E0BED /* Resources */,
 				84EB74AD2C42F38800A11F1A /* Preview Content */,
 			);
@@ -533,10 +541,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84227C2A2C42F9FD009E0BED /* String.swift in Sources */,
+				84227C412C43049F009E0BED /* SplashView.swift in Sources */,
 				84227C332C42FC9B009E0BED /* ExampleViewModel.swift in Sources */,
 				84227C3E2C42FFEA009E0BED /* Color.swift in Sources */,
 				84227C372C42FCB5009E0BED /* ExampleModel.swift in Sources */,
-				84EB74AA2C42F38600A11F1A /* ContentView.swift in Sources */,
 				84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */,
 				84227C352C42FCA7009E0BED /* ExampleView.swift in Sources */,
 			);
