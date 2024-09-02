@@ -6,3 +6,11 @@
   
 */
 "ContentView.WelcomeMessage" = "Good morning, %@!";
+
+// MARK: Onboarding
+"Onboarding.next" = "Next";
+"Onboarding.title1" = "Find your  Comfort Food here";
+"Onboarding.title2" = "Food Ninja is Where Your Comfort Food Lives";
+"Onboarding.description1" = "Here You Can find a chef or dish for every taste and color. Enjoy!";
+"Onboarding.description2" = "Enjoy a fast and smooth food delivery at your doorstep";
+

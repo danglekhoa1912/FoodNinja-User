@@ -6,3 +6,10 @@
   
 */
 "ContentView.WelcomeMessage" = "Xin chào, %@!";
+
+// MARK: Onboarding
+"Onboarding.next" = "Tiếp tục";
+"Onboarding.title1" = "Tìm món ăn yêu thích của bạn tại đây";
+"Onboarding.title2" = "Food Ninja là nơi món ăn yêu thích của bạn sống";
+"Onboarding.description1" = "Tại đây, bạn có thể tìm thấy đầu bếp hoặc món ăn cho mọi sở thích và màu sắc. Chúc bạn thưởng thức!";
+"Onboarding.description2" = "Hãy thưởng thức dịch vụ giao hàng nhanh chóng và suôn sẻ ngay tại cửa nhà bạn";
