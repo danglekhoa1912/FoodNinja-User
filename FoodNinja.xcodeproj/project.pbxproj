@@ -19,6 +19,15 @@
 		84227C3C2C42FDD7009E0BED /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */; };
 		84227C3E2C42FFEA009E0BED /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C3D2C42FFEA009E0BED /* Color.swift */; };
 		84227C412C43049F009E0BED /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C402C43049F009E0BED /* SplashView.swift */; };
+		84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCC2C84DB5300EAB371 /* FNTextField.swift */; };
+		84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */; };
+		84B09BD22C84EBC500EAB371 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD12C84EBC500EAB371 /* Image.swift */; };
+		84B09BD42C84ED9000EAB371 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD32C84ED9000EAB371 /* OnboardingView.swift */; };
+		84B09BD62C84EDF600EAB371 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD52C84EDF600EAB371 /* OnboardingViewModel.swift */; };
+		84B09BD92C84EF5700EAB371 /* FNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD82C84EF5700EAB371 /* FNButton.swift */; };
+		84B09BE42C863A3100EAB371 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE32C863A3100EAB371 /* AppState.swift */; };
+		84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */; };
+		84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE82C863C5900EAB371 /* LoginView.swift */; };
 		84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */; };
 		84EB74AC2C42F38800A11F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AB2C42F38800A11F1A /* Assets.xcassets */; };
 		84EB74AF2C42F38800A11F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AE2C42F38800A11F1A /* Preview Assets.xcassets */; };
@@ -64,6 +73,15 @@
 		84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		84227C3D2C42FFEA009E0BED /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		84227C402C43049F009E0BED /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		84B09BCC2C84DB5300EAB371 /* FNTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTextField.swift; sourceTree = "<group>"; };
+		84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		84B09BD12C84EBC500EAB371 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		84B09BD32C84ED9000EAB371 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		84B09BD52C84EDF600EAB371 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		84B09BD82C84EF5700EAB371 /* FNButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNButton.swift; sourceTree = "<group>"; };
+		84B09BE32C863A3100EAB371 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		84B09BE82C863C5900EAB371 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		84EB74A42C42F38600A11F1A /* FoodNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNinjaApp.swift; sourceTree = "<group>"; };
 		84EB74AB2C42F38800A11F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				84227C292C42F9FD009E0BED /* String.swift */,
+				84B09BD12C84EBC500EAB371 /* Image.swift */,
 				84227C3D2C42FFEA009E0BED /* Color.swift */,
 			);
 			path = Extensions;
@@ -141,6 +160,7 @@
 		84227C2B2C42FBD4009E0BED /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				84B09BE32C863A3100EAB371 /* AppState.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -148,6 +168,8 @@
 		84227C2C2C42FBE6009E0BED /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				84B09BE52C863C3700EAB371 /* Login */,
+				84B09BCE2C84EAD400EAB371 /* Onboarding */,
 				84227C3F2C43048A009E0BED /* Splash */,
 				84227C2E2C42FC2C009E0BED /* Example */,
 			);
@@ -229,6 +251,50 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		84B09BCA2C84DB3600EAB371 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84B09BD72C84EF4200EAB371 /* FNButton */,
+				84B09BCB2C84DB4100EAB371 /* FNTextField */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84B09BCB2C84DB4100EAB371 /* FNTextField */ = {
+			isa = PBXGroup;
+			children = (
+				84B09BCC2C84DB5300EAB371 /* FNTextField.swift */,
+			);
+			path = FNTextField;
+			sourceTree = "<group>";
+		};
+		84B09BCE2C84EAD400EAB371 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */,
+				84B09BD32C84ED9000EAB371 /* OnboardingView.swift */,
+				84B09BD52C84EDF600EAB371 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		84B09BD72C84EF4200EAB371 /* FNButton */ = {
+			isa = PBXGroup;
+			children = (
+				84B09BD82C84EF5700EAB371 /* FNButton.swift */,
+			);
+			path = FNButton;
+			sourceTree = "<group>";
+		};
+		84B09BE52C863C3700EAB371 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */,
+				84B09BE82C863C5900EAB371 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		84EB749B2C42F38600A11F1A = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +320,7 @@
 		84EB74A62C42F38600A11F1A /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				84B09BCA2C84DB3600EAB371 /* Common */,
 				84227C382C42FCD7009E0BED /* Config */,
 				84227C2D2C42FBF3009E0BED /* App */,
 				84227C2C2C42FBE6009E0BED /* Core */,
@@ -540,13 +607,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */,
 				84227C2A2C42F9FD009E0BED /* String.swift in Sources */,
 				84227C412C43049F009E0BED /* SplashView.swift in Sources */,
 				84227C332C42FC9B009E0BED /* ExampleViewModel.swift in Sources */,
 				84227C3E2C42FFEA009E0BED /* Color.swift in Sources */,
+				84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */,
 				84227C372C42FCB5009E0BED /* ExampleModel.swift in Sources */,
+				84B09BD62C84EDF600EAB371 /* OnboardingViewModel.swift in Sources */,
+				84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */,
+				84B09BD92C84EF5700EAB371 /* FNButton.swift in Sources */,
+				84B09BE42C863A3100EAB371 /* AppState.swift in Sources */,
 				84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */,
 				84227C352C42FCA7009E0BED /* ExampleView.swift in Sources */,
+				84B09BD22C84EBC500EAB371 /* Image.swift in Sources */,
+				84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */,
+				84B09BD42C84ED9000EAB371 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
