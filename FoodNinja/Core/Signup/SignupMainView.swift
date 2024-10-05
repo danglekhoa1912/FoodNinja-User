@@ -29,7 +29,6 @@ struct SignupMainView: View {
                 Text("Error")
             }
         }
-        .padding()
     }
 }
 

@@ -1,13 +1,14 @@
 import Foundation
 
 class TomTomService {
-    private let apiKey = "O0mavFrV0bIe2FS2bNocAJhPVPhnVAwG"
-    private let baseUrl = "https://api.tomtom.com"
+    private let baseUrl = Environment.tomtomURL
+    let apiKey = Environment.tomtomAPIKey
+    static let shared = TomTomService()
     
     // Function to make a request to get a location from coordinates
     func getLocation(fromLatitude latitude: Double, longitude: Double, completion: @escaping (Result<String, Error>) -> Void) {
+
         let urlString = "\(baseUrl)/search/2/reverseGeocode/\(latitude),\(longitude).json?key=\(apiKey)"
-        
         guard let url = URL(string: urlString) else {
             completion(.failure(TomTomServiceError.invalidURL))
             return

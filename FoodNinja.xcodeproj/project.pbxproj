@@ -27,6 +27,7 @@
 		8442DAAC2C8C58F100013ABA /* SignupPhotoProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAAB2C8C58F100013ABA /* SignupPhotoProfileView.swift */; };
 		8442DAAE2C8C590300013ABA /* SignupPhotoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */; };
 		8442DAB12C8C68DB00013ABA /* FNImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */; };
+		84430DE62CB1AC2F00AA032B /* BuildEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84430DE52CB1AC2F00AA032B /* BuildEnvironment.swift */; };
 		84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCC2C84DB5300EAB371 /* FNTextField.swift */; };
 		84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */; };
 		84B09BD22C84EBC500EAB371 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD12C84EBC500EAB371 /* Image.swift */; };
@@ -102,6 +103,8 @@
 		8442DAAB2C8C58F100013ABA /* SignupPhotoProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhotoProfileView.swift; sourceTree = "<group>"; };
 		8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhotoProfileViewModel.swift; sourceTree = "<group>"; };
 		8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNImagePicker.swift; sourceTree = "<group>"; };
+		84430DE52CB1AC2F00AA032B /* BuildEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildEnvironment.swift; sourceTree = "<group>"; };
+		8488D04F2CB165F900DE1C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		84B09BCC2C84DB5300EAB371 /* FNTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTextField.swift; sourceTree = "<group>"; };
 		84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		84B09BD12C84EBC500EAB371 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -214,6 +217,7 @@
 				84B09BE32C863A3100EAB371 /* AppState.swift */,
 				84B09BED2C864E1300EAB371 /* NavigationStore.swift */,
 				840615CE2CA0348C00CC8468 /* LocationManager.swift */,
+				84430DE52CB1AC2F00AA032B /* BuildEnvironment.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -430,6 +434,7 @@
 		84EB74A62C42F38600A11F1A /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				8488D04F2CB165F900DE1C43 /* Info.plist */,
 				840615D22CA0876000CC8468 /* Services */,
 				84B09BCA2C84DB3600EAB371 /* Common */,
 				84227C382C42FCD7009E0BED /* Config */,
@@ -752,6 +757,7 @@
 				84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */,
 				84D3A03A2CB13A460035EF4A /* SignupMainView.swift in Sources */,
 				84E515962C8C4C9E0025A77B /* SignupPaymentViewModel.swift in Sources */,
+				84430DE62CB1AC2F00AA032B /* BuildEnvironment.swift in Sources */,
 				84B09BD42C84ED9000EAB371 /* OnboardingView.swift in Sources */,
 				84E515922C8C4A0F0025A77B /* SignupLayoutView.swift in Sources */,
 				84E5158C2C8C40790025A77B /* SignupBioView.swift in Sources */,
@@ -815,6 +821,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "https://dev";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -878,6 +885,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BASE_URL = "https://prod";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -931,8 +939,9 @@
 		};
 		84EB74C92C42F38800A11F1A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1325C104CA3BA0B2923B4718 /* Pods-FoodNinja.debug.xcconfig */;
+			baseConfigurationReference = 5255311B73F0DC97AB03B2B1 /* Pods-FoodNinja-FoodNinjaUITests.debug.xcconfig */;
 			buildSettings = {
+				APP_ENVIRONMENT = dev;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -942,6 +951,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodNinja/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -958,13 +968,15 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TOMTOM_URL = "https://api.tomtom.com";
 			};
 			name = Debug;
 		};
 		84EB74CA2C42F38800A11F1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 558B2D6685935F4346489321 /* Pods-FoodNinja.release.xcconfig */;
+			baseConfigurationReference = 1740FEDA6269116B38B41D2F /* Pods-FoodNinja-FoodNinjaUITests.release.xcconfig */;
 			buildSettings = {
+				APP_ENVIRONMENT = prod;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -974,6 +986,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodNinja/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -990,6 +1003,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TOMTOM_URL = "https://api.tomtom.com1";
 			};
 			name = Release;
 		};
