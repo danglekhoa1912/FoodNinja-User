@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum ImageName: String {
-    case splash, logo, facebook, google
+    case splash, logo, facebook, google, payoneer, paypal, visa, camera, gallery, location, success
     case onoarding1 = "onboarding-1"
     case onoarding2 = "onboarding-2"
 }

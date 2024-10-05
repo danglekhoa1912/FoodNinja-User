@@ -11,13 +11,20 @@ import SwiftUI
 struct FoodNinjaApp: App {
     @State var endSplash = true
     @ObservedObject private var appState = AppState()
+    @ObservedObject private var navigationStore = NavigationStore()
     var body: some Scene {
         WindowGroup {
-            VStack {
+            NavigationView {
                 if endSplash {
                     SplashView()
                 } else if appState.isOnboardingDone {
-                    LoginView()
+                    NavigationStack(path: $navigationStore.path) {
+                        LoginView()
+                            .environmentObject(navigationStore)
+                            .navigationDestination(for: NavigationDestination.self) {
+                                path in path.view.environmentObject(navigationStore)
+                            }
+                    }
                 } else {
                     OnboardingView().environmentObject(appState)
                 }

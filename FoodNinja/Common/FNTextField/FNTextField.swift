@@ -25,7 +25,7 @@ struct FNTextField: View {
                 if let leadingIcon = leadingIcon {
                     Image(systemName: leadingIcon)
                         .scaledToFit()
-                        .frame(height: 20)
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.gray)
                 }
                 if type == .password {
@@ -44,16 +44,17 @@ struct FNTextField: View {
                         }
                 } else {
                     TextField(placeholder, text: $value)
-                    if let leadingIcon = leadingIcon {
-                        Image(systemName: leadingIcon)
+                    if let trailingIcon = trailingIcon {
+                        Image(systemName: trailingIcon)
                             .scaledToFit()
-                            .frame(height: 20)
+                            .frame(width: 20, height: 20)
                             .foregroundColor(.gray)
                     }
                 }
             }
             .frame(height: 52)
             .padding(.horizontal)
+            .background(Color.white) 
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(.gray.opacity(0.5), lineWidth: 1))
         }
     }
