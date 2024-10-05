@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2C203F956A7B8199C7C13493 /* Pods_FoodNinja_FoodNinjaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA3EFB58D5FD1FDAFB76E39 /* Pods_FoodNinja_FoodNinjaUITests.framework */; };
 		64832C81EA75F7989EA97F2C /* Pods_FoodNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CBC659152059A98BE11826 /* Pods_FoodNinja.framework */; };
+		840615CB2CA02E8D00CC8468 /* SignupSetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CA2CA02E8D00CC8468 /* SignupSetLocation.swift */; };
+		840615CD2CA02EA300CC8468 /* SignupSetLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CC2CA02EA300CC8468 /* SignupSetLocationViewModel.swift */; };
+		840615CF2CA0348C00CC8468 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CE2CA0348C00CC8468 /* LocationManager.swift */; };
+		840615D42CA087A600CC8468 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615D32CA087A600CC8468 /* ApiService.swift */; };
+		840615D62CA0EFF400CC8468 /* TomTomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615D52CA0EFF400CC8468 /* TomTomService.swift */; };
 		84227C1A2C42F7FE009E0BED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 84227C192C42F7FE009E0BED /* .swiftlint.yml */; };
 		84227C1F2C42F8EC009E0BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84227C212C42F8EC009E0BED /* Localizable.strings */; };
 		84227C242C42F901009E0BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84227C262C42F901009E0BED /* Localizable.strings */; };
@@ -19,6 +24,9 @@
 		84227C3C2C42FDD7009E0BED /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */; };
 		84227C3E2C42FFEA009E0BED /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C3D2C42FFEA009E0BED /* Color.swift */; };
 		84227C412C43049F009E0BED /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84227C402C43049F009E0BED /* SplashView.swift */; };
+		8442DAAC2C8C58F100013ABA /* SignupPhotoProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAAB2C8C58F100013ABA /* SignupPhotoProfileView.swift */; };
+		8442DAAE2C8C590300013ABA /* SignupPhotoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */; };
+		8442DAB12C8C68DB00013ABA /* FNImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */; };
 		84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCC2C84DB5300EAB371 /* FNTextField.swift */; };
 		84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */; };
 		84B09BD22C84EBC500EAB371 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD12C84EBC500EAB371 /* Image.swift */; };
@@ -28,6 +36,19 @@
 		84B09BE42C863A3100EAB371 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE32C863A3100EAB371 /* AppState.swift */; };
 		84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */; };
 		84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE82C863C5900EAB371 /* LoginView.swift */; };
+		84B09BEE2C864E1300EAB371 /* NavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BED2C864E1300EAB371 /* NavigationStore.swift */; };
+		84BEAE422CB0658D0045A5D1 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEAE412CB0658D0045A5D1 /* SignupModel.swift */; };
+		84BEAE442CB06A890045A5D1 /* SignupSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEAE432CB06A890045A5D1 /* SignupSuccess.swift */; };
+		84D3A0382CB13A210035EF4A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A0372CB13A210035EF4A /* SignupView.swift */; };
+		84D3A03A2CB13A460035EF4A /* SignupMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A0392CB13A460035EF4A /* SignupMainView.swift */; };
+		84D3A03E2CB1422C0035EF4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A03D2CB1422C0035EF4A /* HomeView.swift */; };
+		84D3A0402CB14AC80035EF4A /* SignupBioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A03F2CB14AC80035EF4A /* SignupBioViewModel.swift */; };
+		84E515872C8B777C0025A77B /* SignupMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E515862C8B777C0025A77B /* SignupMainViewModel.swift */; };
+		84E5158A2C8B7A060025A77B /* FNCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E515892C8B7A060025A77B /* FNCheckBox.swift */; };
+		84E5158C2C8C40790025A77B /* SignupBioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5158B2C8C40790025A77B /* SignupBioView.swift */; };
+		84E515922C8C4A0F0025A77B /* SignupLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E515912C8C4A0F0025A77B /* SignupLayoutView.swift */; };
+		84E515942C8C4C8E0025A77B /* SignupPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E515932C8C4C8E0025A77B /* SignupPaymentView.swift */; };
+		84E515962C8C4C9E0025A77B /* SignupPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E515952C8C4C9E0025A77B /* SignupPaymentViewModel.swift */; };
 		84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */; };
 		84EB74AC2C42F38800A11F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AB2C42F38800A11F1A /* Assets.xcassets */; };
 		84EB74AF2C42F38800A11F1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB74AE2C42F38800A11F1A /* Preview Assets.xcassets */; };
@@ -63,6 +84,11 @@
 		5255311B73F0DC97AB03B2B1 /* Pods-FoodNinja-FoodNinjaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodNinja-FoodNinjaUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodNinja-FoodNinjaUITests/Pods-FoodNinja-FoodNinjaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		558B2D6685935F4346489321 /* Pods-FoodNinja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodNinja.release.xcconfig"; path = "Target Support Files/Pods-FoodNinja/Pods-FoodNinja.release.xcconfig"; sourceTree = "<group>"; };
 		7BA3EFB58D5FD1FDAFB76E39 /* Pods_FoodNinja_FoodNinjaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodNinja_FoodNinjaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840615CA2CA02E8D00CC8468 /* SignupSetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSetLocation.swift; sourceTree = "<group>"; };
+		840615CC2CA02EA300CC8468 /* SignupSetLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSetLocationViewModel.swift; sourceTree = "<group>"; };
+		840615CE2CA0348C00CC8468 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		840615D32CA087A600CC8468 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		840615D52CA0EFF400CC8468 /* TomTomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomService.swift; sourceTree = "<group>"; };
 		84227C192C42F7FE009E0BED /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84227C202C42F8EC009E0BED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84227C252C42F901009E0BED /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -73,6 +99,9 @@
 		84227C3B2C42FDD7009E0BED /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		84227C3D2C42FFEA009E0BED /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		84227C402C43049F009E0BED /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		8442DAAB2C8C58F100013ABA /* SignupPhotoProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhotoProfileView.swift; sourceTree = "<group>"; };
+		8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhotoProfileViewModel.swift; sourceTree = "<group>"; };
+		8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNImagePicker.swift; sourceTree = "<group>"; };
 		84B09BCC2C84DB5300EAB371 /* FNTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTextField.swift; sourceTree = "<group>"; };
 		84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		84B09BD12C84EBC500EAB371 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -82,6 +111,19 @@
 		84B09BE32C863A3100EAB371 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		84B09BE82C863C5900EAB371 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		84B09BED2C864E1300EAB371 /* NavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStore.swift; sourceTree = "<group>"; };
+		84BEAE412CB0658D0045A5D1 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		84BEAE432CB06A890045A5D1 /* SignupSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSuccess.swift; sourceTree = "<group>"; };
+		84D3A0372CB13A210035EF4A /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		84D3A0392CB13A460035EF4A /* SignupMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMainView.swift; sourceTree = "<group>"; };
+		84D3A03D2CB1422C0035EF4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84D3A03F2CB14AC80035EF4A /* SignupBioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBioViewModel.swift; sourceTree = "<group>"; };
+		84E515862C8B777C0025A77B /* SignupMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMainViewModel.swift; sourceTree = "<group>"; };
+		84E515892C8B7A060025A77B /* FNCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNCheckBox.swift; sourceTree = "<group>"; };
+		84E5158B2C8C40790025A77B /* SignupBioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupBioView.swift; sourceTree = "<group>"; };
+		84E515912C8C4A0F0025A77B /* SignupLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLayoutView.swift; sourceTree = "<group>"; };
+		84E515932C8C4C8E0025A77B /* SignupPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentView.swift; sourceTree = "<group>"; };
+		84E515952C8C4C9E0025A77B /* SignupPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentViewModel.swift; sourceTree = "<group>"; };
 		84EB74A42C42F38600A11F1A /* FoodNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB74A72C42F38600A11F1A /* FoodNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNinjaApp.swift; sourceTree = "<group>"; };
 		84EB74AB2C42F38800A11F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +164,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840615D22CA0876000CC8468 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				840615D32CA087A600CC8468 /* ApiService.swift */,
+				840615D52CA0EFF400CC8468 /* TomTomService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		84227C1B2C42F897009E0BED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				84B09BE32C863A3100EAB371 /* AppState.swift */,
+				84B09BED2C864E1300EAB371 /* NavigationStore.swift */,
+				840615CE2CA0348C00CC8468 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -168,6 +221,8 @@
 		84227C2C2C42FBE6009E0BED /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				84D3A03C2CB1421F0035EF4A /* Home */,
+				84B09BEA2C864DED00EAB371 /* Signup */,
 				84B09BE52C863C3700EAB371 /* Login */,
 				84B09BCE2C84EAD400EAB371 /* Onboarding */,
 				84227C3F2C43048A009E0BED /* Splash */,
@@ -251,9 +306,19 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		8442DAAF2C8C68CA00013ABA /* FNImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */,
+			);
+			path = FNImagePicker;
+			sourceTree = "<group>";
+		};
 		84B09BCA2C84DB3600EAB371 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8442DAAF2C8C68CA00013ABA /* FNImagePicker */,
+				84E515882C8B79F80025A77B /* FNCheckBox */,
 				84B09BD72C84EF4200EAB371 /* FNButton */,
 				84B09BCB2C84DB4100EAB371 /* FNTextField */,
 			);
@@ -295,6 +360,51 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		84B09BEA2C864DED00EAB371 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				84E515852C8B76F50025A77B /* SignupOnboardingViews */,
+				84E515862C8B777C0025A77B /* SignupMainViewModel.swift */,
+				84D3A0392CB13A460035EF4A /* SignupMainView.swift */,
+				84BEAE412CB0658D0045A5D1 /* SignupModel.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		84D3A03C2CB1421F0035EF4A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84D3A03D2CB1422C0035EF4A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84E515852C8B76F50025A77B /* SignupOnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				84E5158B2C8C40790025A77B /* SignupBioView.swift */,
+				84D3A03F2CB14AC80035EF4A /* SignupBioViewModel.swift */,
+				84E515912C8C4A0F0025A77B /* SignupLayoutView.swift */,
+				84E515932C8C4C8E0025A77B /* SignupPaymentView.swift */,
+				84E515952C8C4C9E0025A77B /* SignupPaymentViewModel.swift */,
+				8442DAAB2C8C58F100013ABA /* SignupPhotoProfileView.swift */,
+				8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */,
+				840615CA2CA02E8D00CC8468 /* SignupSetLocation.swift */,
+				840615CC2CA02EA300CC8468 /* SignupSetLocationViewModel.swift */,
+				84BEAE432CB06A890045A5D1 /* SignupSuccess.swift */,
+				84D3A0372CB13A210035EF4A /* SignupView.swift */,
+			);
+			path = SignupOnboardingViews;
+			sourceTree = "<group>";
+		};
+		84E515882C8B79F80025A77B /* FNCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				84E515892C8B7A060025A77B /* FNCheckBox.swift */,
+			);
+			path = FNCheckBox;
+			sourceTree = "<group>";
+		};
 		84EB749B2C42F38600A11F1A = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +430,7 @@
 		84EB74A62C42F38600A11F1A /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				840615D22CA0876000CC8468 /* Services */,
 				84B09BCA2C84DB3600EAB371 /* Common */,
 				84227C382C42FCD7009E0BED /* Config */,
 				84227C2D2C42FBF3009E0BED /* App */,
@@ -608,21 +719,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */,
+				84E515872C8B777C0025A77B /* SignupMainViewModel.swift in Sources */,
+				84E5158A2C8B7A060025A77B /* FNCheckBox.swift in Sources */,
+				8442DAB12C8C68DB00013ABA /* FNImagePicker.swift in Sources */,
 				84227C2A2C42F9FD009E0BED /* String.swift in Sources */,
+				84BEAE442CB06A890045A5D1 /* SignupSuccess.swift in Sources */,
 				84227C412C43049F009E0BED /* SplashView.swift in Sources */,
 				84227C332C42FC9B009E0BED /* ExampleViewModel.swift in Sources */,
+				840615CF2CA0348C00CC8468 /* LocationManager.swift in Sources */,
 				84227C3E2C42FFEA009E0BED /* Color.swift in Sources */,
 				84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */,
+				84E515942C8C4C8E0025A77B /* SignupPaymentView.swift in Sources */,
 				84227C372C42FCB5009E0BED /* ExampleModel.swift in Sources */,
 				84B09BD62C84EDF600EAB371 /* OnboardingViewModel.swift in Sources */,
 				84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */,
 				84B09BD92C84EF5700EAB371 /* FNButton.swift in Sources */,
 				84B09BE42C863A3100EAB371 /* AppState.swift in Sources */,
+				840615D42CA087A600CC8468 /* ApiService.swift in Sources */,
 				84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */,
 				84227C352C42FCA7009E0BED /* ExampleView.swift in Sources */,
+				840615CD2CA02EA300CC8468 /* SignupSetLocationViewModel.swift in Sources */,
 				84B09BD22C84EBC500EAB371 /* Image.swift in Sources */,
+				84D3A03E2CB1422C0035EF4A /* HomeView.swift in Sources */,
+				840615D62CA0EFF400CC8468 /* TomTomService.swift in Sources */,
+				84B09BEE2C864E1300EAB371 /* NavigationStore.swift in Sources */,
+				840615CB2CA02E8D00CC8468 /* SignupSetLocation.swift in Sources */,
+				84BEAE422CB0658D0045A5D1 /* SignupModel.swift in Sources */,
+				8442DAAC2C8C58F100013ABA /* SignupPhotoProfileView.swift in Sources */,
+				84D3A0382CB13A210035EF4A /* SignupView.swift in Sources */,
+				8442DAAE2C8C590300013ABA /* SignupPhotoProfileViewModel.swift in Sources */,
+				84D3A0402CB14AC80035EF4A /* SignupBioViewModel.swift in Sources */,
 				84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */,
+				84D3A03A2CB13A460035EF4A /* SignupMainView.swift in Sources */,
+				84E515962C8C4C9E0025A77B /* SignupPaymentViewModel.swift in Sources */,
 				84B09BD42C84ED9000EAB371 /* OnboardingView.swift in Sources */,
+				84E515922C8C4A0F0025A77B /* SignupLayoutView.swift in Sources */,
+				84E5158C2C8C40790025A77B /* SignupBioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,6 +942,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -841,6 +974,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
