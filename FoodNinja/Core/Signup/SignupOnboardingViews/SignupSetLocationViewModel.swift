@@ -15,7 +15,6 @@ struct Location {
 
 final class SignupSetLocationViewModel: ObservableObject {
     private var locationManager = LocationManager()
-    private let tomTomService = TomTomService()
     @Published var address = ""
     
     var signupViewModel: SignupMainViewModel!
@@ -29,7 +28,7 @@ final class SignupSetLocationViewModel: ObservableObject {
     }
     
     private func fetchAddress(latitude: Double, longitude: Double) {
-        tomTomService.getLocation(fromLatitude: latitude, longitude: longitude) { result in
+        TomTomService.shared.getLocation(fromLatitude: latitude, longitude: longitude) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let address):
