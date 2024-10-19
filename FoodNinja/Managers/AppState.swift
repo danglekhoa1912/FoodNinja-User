@@ -8,9 +8,11 @@
 import SwiftUI
 
 enum AppStorageKey: String {
-    case isOnboardingDone
+    case isOnboardingDone, token
 }
 
 final class AppState: ObservableObject {
     @AppStorage(AppStorageKey.isOnboardingDone.rawValue) var isOnboardingDone: Bool = false
+    @AppStorage(AppStorageKey.token.rawValue) var token: String = ""
+
 }

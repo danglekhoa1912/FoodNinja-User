@@ -17,6 +17,14 @@ struct FoodNinjaApp: App {
             NavigationView {
                 if endSplash {
                     SplashView()
+                } else if !appState.token.isEmpty{
+                    NavigationStack(path: $navigationStore.path) {
+                        HomeView()
+                            .environmentObject(navigationStore)
+                            .navigationDestination(for: NavigationDestination.self) {
+                                path in path.view.environmentObject(navigationStore)
+                            }
+                    }
                 } else if appState.isOnboardingDone {
                     NavigationStack(path: $navigationStore.path) {
                         LoginView()

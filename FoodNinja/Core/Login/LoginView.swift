@@ -45,7 +45,9 @@ struct LoginView: View {
                 }
                 Spacer()
                 VStack(spacing: 20) {
-                    FNButton(config: FNButtonConfig(text: "Login", action: {}))
+                    FNButton(config: FNButtonConfig(text: "Login", action: {
+                        viewModel.login()
+                    }))
                         .frame(width: 140)
                         .padding(.top, 36)
                     Button {
