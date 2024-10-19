@@ -31,8 +31,12 @@ struct FNTextField: View {
                 if type == .password {
                     if isShowPassword {
                         TextField(placeholder, text: $value)
+                            .autocorrectionDisabled()
+                            .textInputAutocapitalization(.never)
                     } else {
                         SecureField(placeholder, text: $value)
+                            .autocorrectionDisabled()
+                            .textInputAutocapitalization(.never)
                     }
                     Image(systemName: isShowPassword ? "eye" : "eye.slash")
                         .contentTransition(.symbolEffect(.replace))
@@ -44,6 +48,8 @@ struct FNTextField: View {
                         }
                 } else {
                     TextField(placeholder, text: $value)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
                     if let trailingIcon = trailingIcon {
                         Image(systemName: trailingIcon)
                             .scaledToFit()

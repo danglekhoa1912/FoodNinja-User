@@ -12,7 +12,7 @@
 		840615CB2CA02E8D00CC8468 /* SignupSetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CA2CA02E8D00CC8468 /* SignupSetLocation.swift */; };
 		840615CD2CA02EA300CC8468 /* SignupSetLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CC2CA02EA300CC8468 /* SignupSetLocationViewModel.swift */; };
 		840615CF2CA0348C00CC8468 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615CE2CA0348C00CC8468 /* LocationManager.swift */; };
-		840615D42CA087A600CC8468 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615D32CA087A600CC8468 /* ApiService.swift */; };
+		840615D42CA087A600CC8468 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615D32CA087A600CC8468 /* APIService.swift */; };
 		840615D62CA0EFF400CC8468 /* TomTomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840615D52CA0EFF400CC8468 /* TomTomService.swift */; };
 		84227C1A2C42F7FE009E0BED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 84227C192C42F7FE009E0BED /* .swiftlint.yml */; };
 		84227C1F2C42F8EC009E0BED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84227C212C42F8EC009E0BED /* Localizable.strings */; };
@@ -28,6 +28,10 @@
 		8442DAAE2C8C590300013ABA /* SignupPhotoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */; };
 		8442DAB12C8C68DB00013ABA /* FNImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */; };
 		84430DE62CB1AC2F00AA032B /* BuildEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84430DE52CB1AC2F00AA032B /* BuildEnvironment.swift */; };
+		845499072CC1448600D1867B /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845499062CC1448600D1867B /* LocalStorage.swift */; };
+		8454990A2CC146C700D1867B /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 845499092CC146C700D1867B /* KeychainSwift */; };
+		84708DEB2CBB0732004614E7 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84708DEA2CBB0732004614E7 /* AuthEndpoint.swift */; };
+		84708DEE2CBB0CFF004614E7 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84708DED2CBB0CFF004614E7 /* Register.swift */; };
 		84B09BCD2C84DB5300EAB371 /* FNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCC2C84DB5300EAB371 /* FNTextField.swift */; };
 		84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */; };
 		84B09BD22C84EBC500EAB371 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BD12C84EBC500EAB371 /* Image.swift */; };
@@ -38,6 +42,7 @@
 		84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */; };
 		84B09BE92C863C5900EAB371 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BE82C863C5900EAB371 /* LoginView.swift */; };
 		84B09BEE2C864E1300EAB371 /* NavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09BED2C864E1300EAB371 /* NavigationStore.swift */; };
+		84BB2DB02CBBB372004F02B7 /* UploadEnpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2DAF2CBBB372004F02B7 /* UploadEnpoint.swift */; };
 		84BEAE422CB0658D0045A5D1 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEAE412CB0658D0045A5D1 /* SignupModel.swift */; };
 		84BEAE442CB06A890045A5D1 /* SignupSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEAE432CB06A890045A5D1 /* SignupSuccess.swift */; };
 		84D3A0382CB13A210035EF4A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A0372CB13A210035EF4A /* SignupView.swift */; };
@@ -88,7 +93,7 @@
 		840615CA2CA02E8D00CC8468 /* SignupSetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSetLocation.swift; sourceTree = "<group>"; };
 		840615CC2CA02EA300CC8468 /* SignupSetLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSetLocationViewModel.swift; sourceTree = "<group>"; };
 		840615CE2CA0348C00CC8468 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		840615D32CA087A600CC8468 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		840615D32CA087A600CC8468 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		840615D52CA0EFF400CC8468 /* TomTomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomService.swift; sourceTree = "<group>"; };
 		84227C192C42F7FE009E0BED /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84227C202C42F8EC009E0BED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 		8442DAAD2C8C590300013ABA /* SignupPhotoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhotoProfileViewModel.swift; sourceTree = "<group>"; };
 		8442DAB02C8C68DB00013ABA /* FNImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNImagePicker.swift; sourceTree = "<group>"; };
 		84430DE52CB1AC2F00AA032B /* BuildEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildEnvironment.swift; sourceTree = "<group>"; };
+		845499062CC1448600D1867B /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		84708DEA2CBB0732004614E7 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		84708DED2CBB0CFF004614E7 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		8488D04F2CB165F900DE1C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		84B09BCC2C84DB5300EAB371 /* FNTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTextField.swift; sourceTree = "<group>"; };
 		84B09BCF2C84EB0100EAB371 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 		84B09BE62C863C4F00EAB371 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		84B09BE82C863C5900EAB371 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		84B09BED2C864E1300EAB371 /* NavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStore.swift; sourceTree = "<group>"; };
+		84BB2DAF2CBBB372004F02B7 /* UploadEnpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadEnpoint.swift; sourceTree = "<group>"; };
 		84BEAE412CB0658D0045A5D1 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		84BEAE432CB06A890045A5D1 /* SignupSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSuccess.swift; sourceTree = "<group>"; };
 		84D3A0372CB13A210035EF4A /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -144,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8454990A2CC146C700D1867B /* KeychainSwift in Frameworks */,
 				64832C81EA75F7989EA97F2C /* Pods_FoodNinja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +180,8 @@
 		840615D22CA0876000CC8468 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				840615D32CA087A600CC8468 /* ApiService.swift */,
+				84708DE92CBB0703004614E7 /* API */,
+				840615D32CA087A600CC8468 /* APIService.swift */,
 				840615D52CA0EFF400CC8468 /* TomTomService.swift */,
 			);
 			path = Services;
@@ -197,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				84227C282C42F9F3009E0BED /* Extensions */,
+				845499062CC1448600D1867B /* LocalStorage.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -318,6 +330,23 @@
 			path = FNImagePicker;
 			sourceTree = "<group>";
 		};
+		84708DE92CBB0703004614E7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				84708DEA2CBB0732004614E7 /* AuthEndpoint.swift */,
+				84BB2DAF2CBBB372004F02B7 /* UploadEnpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84708DEC2CBB0CBA004614E7 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				84708DED2CBB0CFF004614E7 /* Register.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
 		84B09BCA2C84DB3600EAB371 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +463,7 @@
 		84EB74A62C42F38600A11F1A /* FoodNinja */ = {
 			isa = PBXGroup;
 			children = (
+				84708DEC2CBB0CBA004614E7 /* DTOs */,
 				8488D04F2CB165F900DE1C43 /* Info.plist */,
 				840615D22CA0876000CC8468 /* Services */,
 				84B09BCA2C84DB3600EAB371 /* Common */,
@@ -590,6 +620,9 @@
 				vi,
 			);
 			mainGroup = 84EB749B2C42F38600A11F1A;
+			packageReferences = (
+				845499082CC146C700D1867B /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 84EB74A52C42F38600A11F1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -723,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BB2DB02CBBB372004F02B7 /* UploadEnpoint.swift in Sources */,
 				84B09BD02C84EB0100EAB371 /* OnboardingContent.swift in Sources */,
 				84E515872C8B777C0025A77B /* SignupMainViewModel.swift in Sources */,
 				84E5158A2C8B7A060025A77B /* FNCheckBox.swift in Sources */,
@@ -737,10 +771,12 @@
 				84E515942C8C4C8E0025A77B /* SignupPaymentView.swift in Sources */,
 				84227C372C42FCB5009E0BED /* ExampleModel.swift in Sources */,
 				84B09BD62C84EDF600EAB371 /* OnboardingViewModel.swift in Sources */,
+				84708DEE2CBB0CFF004614E7 /* Register.swift in Sources */,
 				84B09BE72C863C4F00EAB371 /* LoginViewModel.swift in Sources */,
 				84B09BD92C84EF5700EAB371 /* FNButton.swift in Sources */,
 				84B09BE42C863A3100EAB371 /* AppState.swift in Sources */,
-				840615D42CA087A600CC8468 /* ApiService.swift in Sources */,
+				84708DEB2CBB0732004614E7 /* AuthEndpoint.swift in Sources */,
+				840615D42CA087A600CC8468 /* APIService.swift in Sources */,
 				84EB74A82C42F38600A11F1A /* FoodNinjaApp.swift in Sources */,
 				84227C352C42FCA7009E0BED /* ExampleView.swift in Sources */,
 				840615CD2CA02EA300CC8468 /* SignupSetLocationViewModel.swift in Sources */,
@@ -749,6 +785,7 @@
 				840615D62CA0EFF400CC8468 /* TomTomService.swift in Sources */,
 				84B09BEE2C864E1300EAB371 /* NavigationStore.swift in Sources */,
 				840615CB2CA02E8D00CC8468 /* SignupSetLocation.swift in Sources */,
+				845499072CC1448600D1867B /* LocalStorage.swift in Sources */,
 				84BEAE422CB0658D0045A5D1 /* SignupModel.swift in Sources */,
 				8442DAAC2C8C58F100013ABA /* SignupPhotoProfileView.swift in Sources */,
 				84D3A0382CB13A210035EF4A /* SignupView.swift in Sources */,
@@ -821,7 +858,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BASE_URL = "https://dev";
+				BASE_URL = "http://localhost:3000/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -885,7 +922,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BASE_URL = "https://prod";
+				BASE_URL = "http://localhost:3000/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1127,6 +1164,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		845499082CC146C700D1867B /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		845499092CC146C700D1867B /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845499082CC146C700D1867B /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84EB749C2C42F38600A11F1A /* Project object */;
 }
